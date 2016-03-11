@@ -11,6 +11,7 @@ x = raw_input('Enter the first number: ')
 y = raw_input('Enter the second number: ')
 try:
 	print int(x) / int(y)
-except ZeroDivisionError:
+except ZeroDivisionError, e:
+	print e
 	print 'The second num can\'t be zero. '
 
